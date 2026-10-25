@@ -1,0 +1,204 @@
+:root {
+  /* DARK THEME (DEFAULT) */
+  --bg-page: #070b14;
+  --bg-card: rgba(15, 23, 42, 0.72);
+  --bg-card-solid: #0f172a;
+  --bg-card-border: rgba(255, 255, 255, 0.08);
+  --bg-card-hover: rgba(30, 41, 59, 0.7);
+  --bg-input: rgba(3, 7, 18, 0.6);
+
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+
+  --accent-cyan: #38bdf8;
+  --accent-blue: #3b82f6;
+  --accent-indigo: #6366f1;
+  --accent-purple: #a855f7;
+  --accent-gradient: linear-gradient(135deg, #38bdf8 0%, #6366f1 50%, #a855f7 100%);
+  --accent-glow: rgba(99, 102, 241, 0.35);
+
+  --brand-title-grad: linear-gradient(135deg, #ffffff 0%, #e2e8f0 40%, #93c5fd 100%);
+  --result-grad: linear-gradient(135deg, #ffffff 0%, #38bdf8 60%, #a855f7 100%);
+  --result-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
+
+  --btn-secondary-bg: rgba(30, 41, 59, 0.5);
+  --btn-secondary-border: rgba(255, 255, 255, 0.08);
+  --btn-secondary-hover: rgba(51, 65, 85, 0.6);
+
+  --mic-btn-bg: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  --mic-btn-border: rgba(99, 102, 241, 0.4);
+  --mic-btn-color: #38bdf8;
+  --orb-opacity: 0.28;
+
+  --key-digit-bg: rgba(30, 41, 59, 0.5);
+  --key-digit-text: #f1f5f9;
+  --key-digit-border: rgba(255, 255, 255, 0.07);
+  --key-digit-hover: rgba(51, 65, 85, 0.7);
+
+  --key-op-bg: rgba(99, 102, 241, 0.14);
+  --key-op-text: #a5b4fc;
+  --key-op-border: rgba(99, 102, 241, 0.28);
+  --key-op-hover: rgba(99, 102, 241, 0.25);
+
+  --key-paren-bg: rgba(30, 41, 59, 0.6);
+  --key-paren-text: #94a3b8;
+  --key-paren-border: rgba(255, 255, 255, 0.08);
+
+  --key-clear-bg: rgba(244, 63, 94, 0.15);
+  --key-clear-text: #fb7185;
+  --key-clear-border: rgba(244, 63, 94, 0.3);
+  --key-clear-hover: rgba(244, 63, 94, 0.25);
+
+  --key-special-bg: rgba(245, 158, 11, 0.12);
+  --key-special-text: #fcd34d;
+  --key-special-border: rgba(245, 158, 11, 0.28);
+  --key-special-hover: rgba(245, 158, 11, 0.22);
+
+  --key-extra-bg: rgba(30, 41, 59, 0.4);
+  --key-extra-text: #94a3b8;
+  --key-extra-border: rgba(255, 255, 255, 0.06);
+
+  --history-item-bg: rgba(30, 41, 59, 0.4);
+  --history-item-border: rgba(255, 255, 255, 0.05);
+  --history-item-hover: rgba(51, 65, 85, 0.5);
+
+  --modal-bg: #0f172a;
+  --modal-border: rgba(255, 255, 255, 0.12);
+  --modal-card-bg: rgba(30, 41, 59, 0.4);
+  --modal-card-border: rgba(255, 255, 255, 0.05);
+
+  --shadow-card: 0 12px 32px -8px rgba(0, 0, 0, 0.5);
+  --shadow-display: 0 16px 36px -12px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+
+  --color-success: #10b981;
+  --color-danger: #f43f5e;
+  --color-warning: #f59e0b;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+
+  font-family: var(--font-family);
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: var(--text-main);
+  background-color: var(--bg-page);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* LIGHT THEME */
+[data-theme="light"] {
+  --bg-page: #f1f5f9;
+  --bg-card: rgba(255, 255, 255, 0.88);
+  --bg-card-solid: #ffffff;
+  --bg-card-border: rgba(15, 23, 42, 0.08);
+  --bg-card-hover: rgba(248, 250, 252, 0.95);
+  --bg-input: rgba(241, 245, 249, 0.85);
+
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --text-dim: #94a3b8;
+
+  --brand-title-grad: linear-gradient(135deg, #0f172a 0%, #334155 50%, #4338ca 100%);
+  --result-grad: linear-gradient(135deg, #0f172a 0%, #2563eb 55%, #7c3aed 100%);
+  --result-shadow: none;
+
+  --btn-secondary-bg: rgba(241, 245, 249, 0.9);
+  --btn-secondary-border: rgba(15, 23, 42, 0.09);
+  --btn-secondary-hover: rgba(226, 232, 240, 0.95);
+
+  --mic-btn-bg: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  --mic-btn-border: rgba(99, 102, 241, 0.35);
+  --mic-btn-color: #2563eb;
+  --orb-opacity: 0.16;
+
+  --key-digit-bg: #ffffff;
+  --key-digit-text: #0f172a;
+  --key-digit-border: rgba(15, 23, 42, 0.09);
+  --key-digit-hover: #f8fafc;
+
+  --key-op-bg: rgba(99, 102, 241, 0.08);
+  --key-op-text: #4f46e5;
+  --key-op-border: rgba(99, 102, 241, 0.22);
+  --key-op-hover: rgba(99, 102, 241, 0.16);
+
+  --key-paren-bg: rgba(241, 245, 249, 0.9);
+  --key-paren-text: #475569;
+  --key-paren-border: rgba(15, 23, 42, 0.08);
+
+  --key-clear-bg: rgba(244, 63, 94, 0.08);
+  --key-clear-text: #e11d48;
+  --key-clear-border: rgba(244, 63, 94, 0.22);
+  --key-clear-hover: rgba(244, 63, 94, 0.16);
+
+  --key-special-bg: rgba(245, 158, 11, 0.1);
+  --key-special-text: #d97706;
+  --key-special-border: rgba(245, 158, 11, 0.22);
+  --key-special-hover: rgba(245, 158, 11, 0.18);
+
+  --key-extra-bg: rgba(241, 245, 249, 0.9);
+  --key-extra-text: #475569;
+  --key-extra-border: rgba(15, 23, 42, 0.08);
+
+  --history-item-bg: rgba(248, 250, 252, 0.85);
+  --history-item-border: rgba(15, 23, 42, 0.06);
+  --history-item-hover: #ffffff;
+
+  --modal-bg: #ffffff;
+  --modal-border: rgba(15, 23, 42, 0.1);
+  --modal-card-bg: rgba(241, 245, 249, 0.8);
+  --modal-card-border: rgba(15, 23, 42, 0.06);
+
+  --shadow-card: 0 10px 30px -10px rgba(15, 23, 42, 0.07);
+  --shadow-display: 0 14px 34px -10px rgba(15, 23, 42, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+
+  color-scheme: light;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+html, body {
+  min-height: 100vh;
+  width: 100%;
+  background: var(--bg-page);
+  overflow-x: hidden;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--accent-cyan);
+  outline-offset: 2px;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
